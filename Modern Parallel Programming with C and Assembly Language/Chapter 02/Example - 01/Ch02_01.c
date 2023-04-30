@@ -35,7 +35,7 @@ static void addI16C(void) {
 	const xmm_t b = { .mi16 = {100, -200, 32760, -400, 500, -600, 1200, -950} };
 
 	addI16_avx(&rw, &rs, &a, &b);
-	
+
 	puts("Results for addI16_avx wraparound addition");
 	printf_s("Input 1: [%8hd, %8hd, %8hd, %8hd, %8hd, %8hd, %8hd, %8hd]\n",
 		a.mi16[0], a.mi16[1], a.mi16[2], a.mi16[3], a.mi16[4], a.mi16[5], a.mi16[6], a.mi16[7]);
