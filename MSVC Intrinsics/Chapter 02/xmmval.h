@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <stdalign.h>
 
-typedef union {
+typedef union xmmval {
 	// A union to represent values stored in an xmm register.
 	// (a 128 bits wide register)
 
