@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <immintrin.h>
 
-// A union of packed arrays (16 bytes or 128 bits) different types.
+// A union of packed arrays (16 bytes or 128 bits) different types, emulating the contents of an xmm register.
 typedef union {
 
     alignas(16) int8_t i8[16];
